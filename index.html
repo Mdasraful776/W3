@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">N</div>
+            <span>Nova</span>
+        </div>
+
+        <nav class="navigation">
+
+            <a href="#" class="nav-item active">
+                <span>🏠</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>📊</span>
+                <span>Analytics</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>📁</span>
+                <span>Projects</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>👥</span>
+                <span>Team</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>⚙️</span>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+        <button class="theme-button" id="themeButton">
+            🌙 Dark Mode
+        </button>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Header -->
+        <header class="header">
+
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+            <div class="search-box">
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search projects..."
+                >
+            </div>
+
+            <div class="header-right">
+
+                <button
+                    class="notification-button"
+                    id="notificationButton"
+                >
+                    🔔
+                    <span class="notification-dot"></span>
+                </button>
+
+                <div class="profile">
+                    <div class="avatar">AI</div>
+
+                    <div class="profile-info">
+                        <strong>Developer</strong>
+                        <small>Admin</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Page -->
+        <section class="page">
+
+            <!-- Welcome -->
+            <div class="welcome">
+
+                <div>
+                    <p class="date">Monday, September 28</p>
+
+                    <h1>
+                        Welcome back,
+                        <span>Developer</span> 👋
+                    </h1>
+
+                    <p class="description">
+                        Here's what's happening with your projects today.
+                    </p>
+                </div>
+
+                <button
+                    class="primary-button"
+                    id="newProjectButton"
+                >
+                    + New Project
+                </button>
+
+            </div>
+
+
+            <!-- Statistics -->
+            <div class="stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        📁
+                    </div>
+
+                    <div>
+                        <p>Total Projects</p>
+                        <h2 id="projectNumber">24</h2>
+                        <small>↑ 12% this month</small>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+                        ⚡
+                    </div>
+
+                    <div>
+                        <p>Tasks Completed</p>
+                        <h2>186</h2>
+                        <small>↑ 18% this month</small>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        💰
+                    </div>
+
+                    <div>
+                        <p>Total Revenue</p>
+                        <h2>$8,420</h2>
+                        <small>↑ 9.4% this month</small>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+                        👥
+                    </div>
+
+                    <div>
+                        <p>Team Members</p>
+                        <h2>18</h2>
+                        <small>↑ 4 new members</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dashboard Grid -->
+            <div class="dashboard-grid">
+
+
+                <!-- Projects -->
+                <div class="card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Recent Projects</h3>
+                            <p>Your latest projects</p>
+                        </div>
+
+                        <button class="view-button">
+                            View all →
+                        </button>
+
+                    </div>
+
+
+                    <div id="projectList">
+
+                        <div class="project">
+
+                            <div class="project-left">
+
+                                <div class="project-icon">
+                                    🌐
+                                </div>
+
+                                <div>
+                                    <strong>AI Website</strong>
+                                    <p>Web Development</p>
+                                </div>
+
+                            </div>
+
+                            <div class="progress-area">
+
+                                <span>82%</span>
+
+                                <div class="progress">
+                                    <div style="width: 82%;"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project">
+
+                            <div class="project-left">
+
+                                <div class="project-icon">
+                                    📱
+                                </div>
+
+                                <div>
+                                    <strong>Mobile App</strong>
+                                    <p>Application</p>
+                                </div>
+
+                            </div>
+
+                            <div class="progress-area">
+
+                                <span>64%</span>
+
+                                <div class="progress">
+                                    <div style="width: 64%;"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project">
+
+                            <div class="project-left">
+
+                                <div class="project-icon">
+                                    🛒
+                                </div>
+
+                                <div>
+                                    <strong>E-Commerce</strong>
+                                    <p>Online Store</p>
+                                </div>
+
+                            </div>
+
+                            <div class="progress-area">
+
+                                <span>47%</span>
+
+                                <div class="progress">
+                                    <div style="width: 47%;"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Tasks -->
+                <div class="card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Today's Tasks</h3>
+                            <p>Stay productive</p>
+                        </div>
+
+                        <span
+                            class="task-number"
+                            id="taskNumber"
+                        >
+                            3
+                        </span>
+
+                    </div>
+
+
+                    <div id="taskList">
+
+                        <label class="task">
+
+                            <input type="checkbox">
+
+                            <span>
+                                Finish website design
+                            </span>
+
+                        </label>
+
+
+                        <label class="task">
+
+                            <input type="checkbox">
+
+                            <span>
+                                Review JavaScript code
+                            </span>
+
+                        </label>
+
+
+                        <label class="task">
+
+                            <input type="checkbox">
+
+                            <span>
+                                Update documentation
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="add-task">
+
+                        <input
+                            type="text"
+                            id="taskInput"
+                            placeholder="Add a new task..."
+                        >
+
+                        <button id="addTaskButton">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Activity -->
+            <div class="card activity-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <h3>Recent Activity</h3>
+                        <p>Latest workspace activity</p>
+                    </div>
+
+                </div>
+
+
+                <div class="activity">
+
+                    <div class="activity-item">
+
+                        <div class="activity-avatar">
+                            A
+                        </div>
+
+                        <div>
+                            <strong>Alex</strong>
+                            completed
+                            <b>AI Website</b>
+
+                            <small>
+                                10 minutes ago
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-avatar">
+                            J
+                        </div>
+
+                        <div>
+                            <strong>John</strong>
+                            created
+                            <b>Mobile App</b>
+
+                            <small>
+                                1 hour ago
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-avatar">
+                            M
+                        </div>
+
+                        <div>
+                            <strong>Mike</strong>
+                            uploaded
+                            <b>12 files</b>
+
+                            <small>
+                                3 hours ago
+                            </small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Modal -->
+    <div class="modal" id="projectModal">
+
+        <div class="modal-box">
+
+            <button
+                class="close-button"
+                id="closeButton"
+            >
+                ×
+            </button>
+
+            <h2>Create New Project</h2>
+
+            <p>Create a new project.</p>
+
+            <input
+                type="text"
+                id="projectName"
+                placeholder="Project name"
+            >
+
+            <button
+                class="primary-button"
+                id="createProjectButton"
+            >
+                Create Project
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        Hello
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
